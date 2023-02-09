@@ -1,0 +1,61 @@
+
+$nav-size: 1500px;
+
+*{ 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1728px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+header{
+    .sofa{
+        width: 100%;
+        height: 100vh;
+        z-index: -1;
+    }
+
+
+    nav{
+        max-width: $nav-size;
+        width: 100%;
+        margin: 0 auto;
+        position: fixed;
+        top: 30px;
+        left: calc(50% - ($nav-size / 2));
+
+        .nav-menu{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .nav-menu__placeholder{
+                width: 100px;
+            }
+       
+            .menu__list{
+                width: 30%;
+                display: flex;
+                justify-content: space-between;
+                color: white;
+               
+                .point{
+
+
+
+                }
+                .icon{
+                
+                    .icon-bag{
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
