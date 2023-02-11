@@ -5,43 +5,22 @@
 }
 
 body {
+  background: blue;
   max-width: 1728px;
   margin: 0 auto;
   min-height: 100vh;
 }
 
-header .sofa {
-  width: 100%;
+header {
+  background: url("../Images/Sofa_Img.png") 0 0/100% auto no-repeat;
+  max-width: 1728px;
   height: 100vh;
-  z-index: -1;
 }
-header nav {
-  max-width: 1500px;
-  width: 100%;
-  margin: 0 auto;
-  position: fixed;
-  top: 30px;
-  left: calc(50% - 750px);
-}
-header nav .nav-menu {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-header nav .nav-menu .nav-menu__placeholder {
-  width: 100px;
-}
-header nav .nav-menu .menu__list {
-  width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: white;
+
+@media (min-width: 800px) {
+  header {
+    background: url("../Images/Sofa_Img.png") 0 0/cover no-repeat;
+    max-width: 1728px;
+    height: 100vh;
+  }
 }
