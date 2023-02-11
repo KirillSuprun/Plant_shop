@@ -16,11 +16,46 @@ header {
   max-width: 1728px;
   height: 100vh;
 }
+header .nav-center {
+  width: 100%;
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header nav {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+header nav .nav-menu__placeholder {
+  display: none;
+}
 
 @media (min-width: 800px) {
   header {
     background: url("../Images/Sofa_Img.png") 0 0/cover no-repeat;
     max-width: 1728px;
     height: 100vh;
+  }
+  header .nav-center {
+    padding-top: 2rem;
+  }
+  header nav {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header nav .nav-menu__placeholder {
+    display: block;
   }
 }
