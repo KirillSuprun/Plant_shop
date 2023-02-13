@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Work-sans;
+  src: url("/assets/font/WorkSans-VariableFont_wght.ttf");
+}
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -18,7 +22,7 @@ header {
 }
 header .nav-center {
   width: 100%;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,19 +37,45 @@ header nav {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header nav .nav-menu__placeholder {
   display: none;
 }
+header nav .menu__list {
+  font-family: Work-sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: white;
+  row-gap: 10rem;
+}
+header nav .menu__list .point {
+  margin: 0 0.3rem;
+}
+header nav .menu__list .nav-menu__point_active {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: white;
+}
+header nav .icon-bag {
+  width: 1.5rem;
+  height: 1.5rem;
+}
 
-@media (min-width: 800px) {
+@media (min-width: 661px) {
   header {
     background: url("../Images/Sofa_Img.png") 0 0/cover no-repeat;
     max-width: 1728px;
     height: 100vh;
   }
   header .nav-center {
-    padding-top: 2rem;
+    padding-top: 2.5rem;
   }
   header nav {
     width: 80%;
@@ -57,5 +87,87 @@ header nav .nav-menu__placeholder {
   }
   header nav .nav-menu__placeholder {
     display: block;
+  }
+  header nav .menu__list {
+    font-family: Work-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  header nav .menu__list .point {
+    margin: 0 1.5rem;
+  }
+  header nav .menu__list .nav-menu__point_active {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    color: white;
+  }
+  header nav .icon-bag {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .menu__list {
+    font-family: Work-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .menu__list .point {
+    margin: 0 2.5rem;
+  }
+  .menu__list .nav-menu__point_active {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: white;
+  }
+}
+@media (min-width: 931px) {
+  header {
+    background: url("../Images/Sofa_Img.png") 0 0/cover no-repeat;
+    max-width: 1728px;
+    height: 100vh;
+  }
+  header .nav-center {
+    padding-top: 2.5rem;
+  }
+  header nav {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header nav .nav-menu__placeholder {
+    display: block;
+  }
+  header nav .menu__list {
+    font-family: Work-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  header nav .menu__list .point {
+    margin: 0 2.5rem;
+  }
+  header nav .menu__list .nav-menu__point_active {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
+  }
+  header nav .icon-bag {
+    width: 50px;
+    height: 50px;
   }
 }

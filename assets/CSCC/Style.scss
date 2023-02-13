@@ -1,8 +1,22 @@
 
 $nav-size: 1500px;
 $nav-max-size: 80%;
+$font-name: Work-sans;
+$nav-font-color: white;
 
 //! ***************** VARIABLES **************************************
+
+// @font-face {
+//     font-family: "Open Sans";
+//     src: ;
+// }
+
+@font-face {
+    font-family: Work-sans;
+    src: url('/assets/font/WorkSans-VariableFont_wght.ttf');
+}
+
+// ********************* FONT ****************************************
 
 
 
@@ -29,7 +43,7 @@ header{
 
     .nav-center{
         width: 100%;
-        padding-top: 1rem;
+        padding-top: 1.5rem;
         display: flex;
         justify-content: center;
     }
@@ -38,6 +52,7 @@ header{
         width: 90%;
         display: flex;
         justify-content: space-around;
+        align-items: center;
         
 
         .nav-menu__placeholder{
@@ -47,6 +62,35 @@ header{
 
         // gap для нав МЕНЮ!!!! 
         
+        .menu__list{
+            font-family: $font-name;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: $nav-font-color;
+            
+            row-gap: 10rem;
+
+            .point{
+                margin: 0 0.3rem; // CHANGE TO BURGER
+            }
+
+
+
+            .nav-menu__point_active{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 28px;
+                color: $nav-font-color;
+            }
+        }
+
+        .icon-bag{
+            width: 1.5rem;
+            height: 1.5rem;
+        }
     }
 
 
@@ -55,7 +99,7 @@ header{
 //????????????????????? HEADER ??????????????????????????????????????????//
 
 
-@media(min-width: 800px){
+@media(min-width: 661px){
 
     header{
         background: url('../Images/Sofa_Img.png')  0 0/cover no-repeat ;
@@ -65,7 +109,7 @@ header{
         height: 100vh;
     
         .nav-center{
-            padding-top: 2rem;
+            padding-top: 2.5rem;
         }
 
         nav{
@@ -76,18 +120,144 @@ header{
             .nav-menu__placeholder{
                 display: block;
             }
+
+
+
+
+        
+
+            .menu__list{
+                font-family: $font-name;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
+
+                
+                .point{
+                    margin: 0 1.5rem;
+                }
+
+
+                .nav-menu__point_active{
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 18px;
+                    color: $nav-font-color;
+                }
+            }
+
+            .icon-bag{
+                width: 2rem;
+                height: 2rem;
+            }
+
+
         }
+
+
 
 
     }
     //????????????????????? HEADER ??????????????????????????????????????????//
 
 
+}
+
+
+@media(min-width: 768px){
+    .menu__list{
+        font-family: $font-name;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+
+        
+        .point{
+            margin: 0 2.5rem;
+        }
+
+
+        .nav-menu__point_active{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            color: $nav-font-color;
+        }
+    }
+}
 
 
 
 
- 
+
+@media(min-width: 931px){
+
+    header{
+        background: url('../Images/Sofa_Img.png')  0 0/cover no-repeat ;
+        // background: url('../Images/Sofa_Img.png')  0 0/100% auto no-repeat;
+        // width: 100%;
+        max-width: 1728px;
+        height: 100vh;
+    
+        .nav-center{
+            padding-top: 2.5rem;
+        }
+
+        nav{
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+
+            .nav-menu__placeholder{
+                display: block;
+            }
+
+
+
+
+        
+
+            .menu__list{
+                font-family: $font-name;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 28px;
+
+                
+                .point{
+                    margin: 0 2.5rem;
+                }
+
+
+                .nav-menu__point_active{
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 28px;
+                    color: $nav-font-color;
+                }
+            }
+
+            .icon-bag{
+                width: 50px;
+                height: 50px;
+            }
+
+
+        }
+
+
+
+
+    }
+    //????????????????????? HEADER ??????????????????????????????????????????//
+
+
 
 
 }
