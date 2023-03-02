@@ -101,7 +101,7 @@ header{
         font-family: $font-name;
         color: white;
         width: 80%;
-        margin: 0.5rem auto;
+        margin: 0.5rem auto 0;
 
         .big_slogan{
             font-weight: 700;
@@ -111,13 +111,79 @@ header{
         }
 
         .small_slogan{
-            margin: 0.2rem auto;
+            margin: 0.2rem auto 0;
             font-weight: 400;
             font-size: 0.6rem;
             width: 45%;
             text-align: center;
             // line-height: 2.5rem;
         }
+    }
+
+    .search_div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .search_for_after{
+        width: 40%;
+        position: relative;
+
+        &::after{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 100px;
+            background: url('../Icons/lupa_search.png') center/70% 70% no-repeat, linear-gradient(90deg, #2AF598 0%, #009EFD 100%), ;
+            right: 5px;
+            top: calc(50% - 1rem/2);
+
+            
+        }
+    }
+
+    .search_input{
+        font-family: $font-name;
+        color: white;
+
+        height: 1.5rem;
+        width: 100%;
+        border-radius: 50px;
+        padding: 0.5rem;
+        
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid #FFFFFF;
+        backdrop-filter: blur(10px);
+
+        font-size: 1rem;
+        line-height: 23px;
+        font-weight: 400;
+        color: white;
+
+        // position: relative;
+
+
+
+
+        &::placeholder{
+            color: white; 
+        }
+
+        // &::after{
+        //     content: '1241245';
+        //     display: inline-block;
+        //     position: absolute;
+        //     width: 10rem;
+        //     height: 10rem;
+        //     border-radius: 50px;
+        //     background: #000;
+        //     right: 50px;
+        // }
+
     }
 
 }
@@ -185,7 +251,7 @@ header{
             font-family: $font-name;
             color: white;
             width: 80%;
-            margin: 1.3rem auto;
+            margin: 1.3rem auto 0;
 
             .big_slogan{
                 font-weight: 700;
@@ -195,7 +261,7 @@ header{
             }
 
             .small_slogan{
-                margin: 0.5rem auto;
+                margin: 0.5rem auto 0;
                 font-weight: 400;
                 font-size: 1rem;
                 width: 45%;
@@ -204,6 +270,51 @@ header{
             }
         }
 
+        .search_div{
+            margin-top: 1rem;
+        }
+
+        .search_for_after{
+            width: 40%;
+
+            position: relative;
+
+            &::after{
+                content: '';
+                display: inline-block;
+                position: absolute;
+                width: 1rem;
+                height: 1rem;
+                border-radius: 100px;
+                background: url('../Icons/lupa_search.png') center/70% 70% no-repeat, linear-gradient(90deg, #2AF598 0%, #009EFD 100%), ;
+                right: 10px;
+                top: calc(50% - 1rem/2);
+    
+                
+            }
+        }
+
+        .search_input{
+            font-family: $font-name;
+            color: white;
+    
+            height: 3rem;
+            width: 100%;
+            border-radius: 50px;
+            padding: 1rem;
+            
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid #FFFFFF;
+            backdrop-filter: blur(10px);
+    
+            font-size: 1rem;
+            line-height: 23px;
+            font-weight: 400;
+            color: white;
+            &::placeholder{
+                color: white; 
+            }
+        }
 
     }
     //????????????????????? HEADER ??????????????????????????????????????????//
@@ -214,7 +325,7 @@ header{
 
 @media(min-width: 768px){
 
-
+    header{
 
 
     .menu__list{
@@ -237,6 +348,55 @@ header{
             line-height: 28px;
             color: $nav-font-color;
         }
+    }
+
+    .search_div{
+        margin-top: 1.5rem;
+    }
+
+    .search_for_after{
+        width: 30%;
+
+        position: relative;
+
+        &::after{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 100px;
+            background: url('../Icons/lupa_search.png') center/70% 70% no-repeat, linear-gradient(90deg, #2AF598 0%, #009EFD 100%), ;
+            right: 10px;
+            top: calc(50% - 1rem/2);
+
+            
+        }
+    }
+
+    .search_input{
+        font-family: $font-name;
+        color: white;
+
+        height: 3rem;
+        width: 100%;
+        border-radius: 50px;
+        padding: 1rem;
+        
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid #FFFFFF;
+        backdrop-filter: blur(10px);
+
+        font-size: 1rem;
+        line-height: 23px;
+        font-weight: 400;
+        color: white;
+        &::placeholder{
+            color: white; 
+        }
+    }
+
+
     }
 }
 
@@ -305,7 +465,7 @@ header{
             font-family: $font-name;
             color: white;
             width: 50%;
-            margin: 3.4rem auto;
+            margin: 3.4rem auto 0;
 
             .big_slogan{
                 font-weight: 700;
@@ -315,7 +475,7 @@ header{
             }
 
             .small_slogan{
-                margin: 1rem auto;
+                margin: 1rem auto 0;
                 font-weight: 400;
                 font-size: 1rem;
                 width: 45%;
@@ -389,7 +549,7 @@ header{
             font-family: $font-name;
             color: white;
             width: 50%;
-            margin: 3.4rem auto;
+            margin: 3.4rem auto 0;
 
             .big_slogan{
                 font-weight: 700;
@@ -399,7 +559,7 @@ header{
             }
 
             .small_slogan{
-                margin: 1rem auto;
+                margin: 1rem auto 0;
                 font-weight: 400;
                 font-size: 1rem;
                 width: 45%;
@@ -408,7 +568,57 @@ header{
             }
         }
 
+        .search_div{
+            margin-top: 2rem;
+        }
+
+        .search_for_after{
+            width: 20%;
+
+            position: relative;
+
+            &::after{
+                content: '';
+                display: inline-block;
+                position: absolute;
+                width: 2rem;
+                height: 2rem;
+                border-radius: 100px;
+                background: url('../Icons/lupa_search.png') 50% 35%/65% 65% no-repeat, linear-gradient(90deg, #2AF598 0%, #009EFD 100%), ;
+                right: 10px;
+                top: calc(50% - 2rem/2);
+                
+                &:hover{
+                    transform: scale(1.5);
+                }
+            }
+        }
+
+        .search_input{
+            font-family: $font-name;
+            color: white;
+    
+            height: 3rem;
+            width: 100%;
+            border-radius: 50px;
+            padding: 1rem;
+            
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid #FFFFFF;
+            backdrop-filter: blur(10px);
+    
+            font-size: 1rem;
+            line-height: 23px;
+            font-weight: 400;
+            color: white;
+            &::placeholder{
+                color: white; 
+            }
+        }
+
     }
+// ??????????????????????????????????? HEADER???????????????????????????????????????????????
+
     
 }
 
