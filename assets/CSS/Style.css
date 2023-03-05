@@ -16,9 +16,9 @@ body {
 }
 
 header {
-  background: url("../Images/Sofa_Img.png") 0 0/100% auto no-repeat;
+  background: url("../Images/Sofa_Img.png") 0 0/100% 100% no-repeat;
   max-width: 1728px;
-  min-height: 100vh;
+  min-height: 30vh;
 }
 header .nav-center {
   width: 100%;
@@ -52,16 +52,53 @@ header nav .menu__list {
   line-height: 28px;
   color: white;
   row-gap: 10rem;
+  text-decoration: none;
 }
 header nav .menu__list .point {
   margin: 0 0.3rem;
-}
-header nav .menu__list .nav-menu__point_active {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 28px;
   color: white;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header nav .menu__list .point:hover {
+  text-decoration: underline;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header nav .menu__list .nav-menu__point_active {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: white;
+  text-decoration: none;
+  background: -webkit-gradient(linear, left top, right top, from(#2AF598), to(#009EFD));
+  background: linear-gradient(90deg, #2AF598 0%, #009EFD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+header nav .menu__list .nav-menu__point_active:hover {
+  text-decoration: underline;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header nav .icon {
+  cursor: pointer;
+}
+header nav .icon:hover {
+  cursor: pointer;
+}
+header nav svg {
+  cursor: pointer;
+}
+header nav svg:hover {
+  cursor: pointer;
 }
 header nav .icon-bag {
   width: 1.5rem;
@@ -148,11 +185,18 @@ header .price_point {
   display: none;
 }
 
+div.transition_blocks {
+  margin-top: -1.5rem;
+  height: 1.7rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(80.65%, #ffffff));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 80.65%);
+}
+
 @media (min-width: 661px) {
   header {
-    background: url("../Images/Sofa_Img.png") 0 0/100% auto no-repeat;
+    background: url("../Images/Sofa_Img.png") 0 0/100% 100% no-repeat;
     max-width: 1728px;
-    height: 100vh;
+    height: 40vh;
   }
   header .nav-center {
     padding-top: 2.5rem;
@@ -177,10 +221,13 @@ header .price_point {
   }
   header nav .menu__list .point {
     margin: 0 1.5rem;
+    line-height: 28px;
+    color: white;
+    text-decoration: none;
   }
   header nav .menu__list .nav-menu__point_active {
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 18px;
     line-height: 18px;
     color: white;
@@ -265,6 +312,12 @@ header .price_point {
   header .search_input::placeholder {
     color: white;
   }
+  div.transition_blocks {
+    margin-top: -4rem;
+    height: 4rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(75.65%, #ffffff));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 75.65%);
+  }
 }
 @media (min-width: 768px) {
   header .menu__list {
@@ -276,10 +329,23 @@ header .price_point {
   }
   header .menu__list .point {
     margin: 0 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: white;
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  header .menu__list .point:hover {
+    text-decoration: underline;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   header .menu__list .nav-menu__point_active {
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     line-height: 28px;
     color: white;
@@ -347,7 +413,7 @@ header .price_point {
   header {
     background: url("../Images/Sofa_Img.png") 0 0/100% 100% no-repeat;
     max-width: 1728px;
-    min-height: 100vh;
+    min-height: 80vh;
   }
   header .nav-center {
     padding-top: 2.5rem;
@@ -372,10 +438,13 @@ header .price_point {
   }
   header nav .menu__list .point {
     margin: 0 2.5rem;
+    line-height: 28px;
+    color: white;
+    text-decoration: none;
   }
   header nav .menu__list .nav-menu__point_active {
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     line-height: 28px;
     color: white;
@@ -404,6 +473,12 @@ header .price_point {
     text-align: center;
     line-height: 1.8rem;
   }
+  div.transition_blocks {
+    margin-top: -10rem;
+    height: 10rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(60.65%, #ffffff));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 60.65%);
+  }
 }
 @media (min-width: 1364px) {
   header {
@@ -431,10 +506,16 @@ header .price_point {
   }
   header nav .menu__list .point {
     margin: 0 2.5rem;
+    line-height: 28px;
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
   }
   header nav .menu__list .nav-menu__point_active {
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     color: white;
@@ -520,6 +601,12 @@ header .price_point {
   }
   header .search_input::placeholder {
     color: white;
+  }
+  div.transition_blocks {
+    margin-top: -10rem;
+    height: 10rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(60.65%, #ffffff));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 60.65%);
   }
 }
 @media (min-width: 1450px) {

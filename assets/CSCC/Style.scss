@@ -40,10 +40,10 @@ body{
 
 header{
     // background: url('../Images/Sofa_Img.png')  0 0/cover no-repeat ;
-    background: url('../Images/Sofa_Img.png')  0 0/100% auto no-repeat;
+    background: url('../Images/Sofa_Img.png')  0 0/100% 100% no-repeat;
     // width: 100%;
     max-width: 1728px;
-    min-height: 100vh;
+    min-height: 30vh;
 
     .nav-center{
         width: 100%;
@@ -73,21 +73,62 @@ header{
             font-size: $font-size-mobile;
             line-height: 28px;
             color: $nav-font-color;
-            
             row-gap: 10rem;
+            text-decoration: none;
 
             .point{
                 margin: 0 0.3rem; // CHANGE TO BURGER
+                font-style: normal;
+                font-weight: 400;
+                font-size: $font-size-mobile;
+                line-height: 28px;
+                color: $nav-font-color;
+                text-decoration: none;
+                transition: 0.3s;
+
+                &:hover{
+                    text-decoration: underline;
+                    transition: 0.3s;
+
+                }
             }
 
 
 
             .nav-menu__point_active{
                 font-style: normal;
-                font-weight: 600;
+                font-weight: 700;
                 font-size: $font-size-mobile;
                 line-height: 28px;
                 color: $nav-font-color;
+                text-decoration: none;
+
+                background: linear-gradient(90deg, #2AF598 0%, #009EFD 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+
+                &:hover{
+                    text-decoration: underline;
+                    transition: 0.3s;
+                }
+            }
+        }
+
+        .icon{
+
+            cursor: pointer;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        svg{
+            cursor: pointer;
+
+            &:hover{
+                cursor: pointer;
             }
         }
 
@@ -181,15 +222,23 @@ header{
 }
 //????????????????????? HEADER ??????????????????????????????????????????//
 
+div.transition_blocks{
+    margin-top:-1.5rem;
+    height: 1.7rem;
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 80.65%);
+}
+    // ********************* DIV TRANSITION BLOCK ***************************************//
+
 
 @media(min-width: 661px){
 
     header{
-        background: url('../Images/Sofa_Img.png')  0 0/100% auto no-repeat;
+        background: url('../Images/Sofa_Img.png')  0 0/100% 100% no-repeat;
         // background: url('../Images/Sofa_Img.png')  0 0/100% auto no-repeat;
         // width: 100%;
         max-width: 1728px;
-        height: 100vh;
+        height: 40vh;
     
         .nav-center{
             padding-top: 2.5rem;
@@ -219,12 +268,15 @@ header{
                 
                 .point{
                     margin: 0 1.5rem;
+                    line-height: 28px;
+                    color: $nav-font-color;
+                    text-decoration: none;
                 }
 
 
                 .nav-menu__point_active{
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 700;
                     font-size: 18px;
                     line-height: 18px;
                     color: $nav-font-color;
@@ -316,7 +368,13 @@ header{
     }
     //????????????????????? HEADER ??????????????????????????????????????????//
 
-
+    div.transition_blocks{
+        margin-top:-4rem;
+        height: 4rem;
+    
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 75.65%);
+    }
+    // ********************* DIV TRANSITION BLOCK ***************************************//
 }
 
 
@@ -335,12 +393,25 @@ header{
         
         .point{
             margin: 0 2.5rem;
+            font-style: normal;
+            font-weight: 400;
+            font-size: $font-size-medium;
+            line-height: 28px;
+            color: $nav-font-color;
+            text-decoration: none;
+            transition: 0.5s;
+
+            &:hover{
+                text-decoration: underline;
+                transition: 0.5s;
+ 
+            }
         }
 
 
         .nav-menu__point_active{
             font-style: normal;
-            font-weight: 600;
+            font-weight: 700;
             font-size: $font-size-medium;
             line-height: 28px;
             color: $nav-font-color;
@@ -413,7 +484,7 @@ header{
         // background: url('../Images/Sofa_Img.png')  0 0/100% auto no-repeat;
         // width: 100%;
         max-width: 1728px;
-        min-height: 100vh;
+        min-height: 80vh;
     
         .nav-center{
             padding-top: 2.5rem;
@@ -443,12 +514,15 @@ header{
                 
                 .point{
                     margin: 0 2.5rem;
+                    line-height: 28px;
+                    color: $nav-font-color;
+                    text-decoration: none;
                 }
 
 
                 .nav-menu__point_active{
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 700;
                     font-size: $font-size-medium;
                     line-height: 28px;
                     color: $nav-font-color;
@@ -490,8 +564,13 @@ header{
     }
     //????????????????????? HEADER ??????????????????????????????????????????//
 
-
-
+    div.transition_blocks{
+        margin-top:-10rem;
+        height: 10rem;
+    
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 60.65%);
+    }
+    // ********************* DIV TRANSITION BLOCK ***************************************//
 
 }
 
@@ -523,12 +602,18 @@ header{
                 
                 .point{
                     margin: 0 2.5rem;
+                    line-height: 28px;
+                    color: $nav-font-color;
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: $font-size-desktop;
                 }
 
 
                 .nav-menu__point_active{
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 700;
                     font-size: $font-size-desktop;
                     line-height: 28px;
                     color: $nav-font-color;
@@ -621,7 +706,13 @@ header{
 
     }
 // ??????????????????????????????????? HEADER???????????????????????????????????????????????
+    div.transition_blocks{
+    margin-top:-10rem;
+    height: 10rem;
 
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 60.65%);
+    }
+// ********************* DIV TRANSITION BLOCK ***************************************//
     
 }
 
@@ -714,7 +805,7 @@ header{
             top: 1vw;
         }
     }
-    
+    // ??????????????????????????????????? HEADER???????????????????????????????????????????????
 }
 
 
@@ -726,4 +817,5 @@ header{
         max-width: 80vw;
         min-height: 0;
     }
+    // ??????????????????????????????????? HEADER???????????????????????????????????????????????
 }
