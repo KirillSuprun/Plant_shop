@@ -192,6 +192,16 @@ div.transition_blocks {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 80.65%);
 }
 
+main .info_blocks {
+  margin-top: 4rem;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(4rem, auto))[3];
+  grid-template-columns: repeat(3, minmax(4rem, auto));
+  grid-auto-rows: 4rem;
+}
+
 @media (min-width: 661px) {
   header {
     background: url("../Images/Sofa_Img.png") 0 0/100% 100% no-repeat;
