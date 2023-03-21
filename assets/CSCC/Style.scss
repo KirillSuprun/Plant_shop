@@ -24,7 +24,8 @@ $font-size-desktop: 24px;
 }
 
 body{
-    background: blue;
+    // background: blue;
+    font-family: $font-name;
     
     margin: 0 auto;
     min-height: 100vh;
@@ -226,12 +227,49 @@ div.transition_blocks{
     // ********************* DIV TRANSITION BLOCK ***************************************//
 
 main{
+    font-size: $font-size-mobile;
+
     .info_blocks{
-        margin-top: 4rem;
+        font-size: $font-size-mobile;
+        margin-top: 2rem;
         text-align: center;
         display: grid;
-        grid-template-columns: repeat(3, minmax(4rem, auto));
-        grid-auto-rows: 4rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+        .icon_info_block{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            .icon_block{
+                svg{
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+
+            .text_block{
+                padding-left: 0.5em;
+                .big_font{
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1.3rem;
+                    line-height: 1.6rem;
+
+                    color: #081323;
+                }
+                .small_font{
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 0.83rem;
+                    line-height: calc(1rem - 1px);
+
+                    color: #828282;
+                }
+            }
+        }
     }
 }
 //!!!!!!!!!!!!!!!!!!!!!!!!! MAIN !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -486,9 +524,54 @@ main{
     // ????????????????????????? HEADER ??????????????????????????????????????
 
     main{
-    
+        font-size: $font-size-medium;
+        .info_blocks{
+            font-size: $font-size-medium;
+            margin-top: 0.5rem;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            .icon_info_block{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                .icon_block{
+                    svg{
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+
+                .text_block{
+                    padding-left: 0.3em;
+                    .big_font{
+                        font-size: $font-size-medium;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1em;
+                        line-height: 1.2em;
+
+                        color: #081323;
+                    }
+                    .small_font{
+                        font-size: $font-size-medium;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 0.6em;
+                        line-height: calc(1em - 1px);
+
+                        color: #828282;
+                        margin-top: 0.3em;
+                    }
+                }
+            }
+        }
     }
     //!!!!!!!!!!!!!!!!!!!!!!!!! MAIN !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    
 }
 
 
@@ -727,18 +810,62 @@ main{
 
 
     }
-// ??????????????????????????????????? HEADER???????????????????????????????????????????????
+    // ??????????????????????????????????? HEADER???????????????????????????????????????????????
     div.transition_blocks{
     margin-top:-10rem;
     height: 10rem;
 
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 60.65%);
     }
-// ********************* DIV TRANSITION BLOCK ***************************************//
+    // ********************* DIV TRANSITION BLOCK ***************************************//
     main{
-        
-    }
+        font-size: $font-size-desktop;
+        .info_blocks{
+            font-size: $font-size-desktop;
+            margin-top: 0.5rem;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            .icon_info_block{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                .icon_block{
+                    svg{
+                        width: 84px;
+                        height: 84px;
+                    }
+                }
+
+                .text_block{
+                    padding-left: 0.3em;
+
+
+                    .big_font{
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1.1em;
+                        line-height: 1.4em;
+
+                        color: #081323;
+                    }
+                    .small_font{
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 0.75em;
+                        line-height: calc(1em - 1px);
+                        // margin-top: 0.5em;
+
+                        color: #828282;
+                    }
+                }
+            }
+        }
     //!!!!!!!!!!!!!!!!!!!!!!!!! MAIN !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    }
 }
 
 

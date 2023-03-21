@@ -9,7 +9,7 @@
 }
 
 body {
-  background: blue;
+  font-family: Work-sans;
   margin: 0 auto;
   min-height: 100vh;
   max-width: 1728px;
@@ -192,14 +192,50 @@ div.transition_blocks {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 80.65%);
 }
 
+main {
+  font-size: 16px;
+}
 main .info_blocks {
-  margin-top: 4rem;
+  font-size: 16px;
+  margin-top: 2rem;
   text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(4rem, auto))[3];
-  grid-template-columns: repeat(3, minmax(4rem, auto));
-  grid-auto-rows: 4rem;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+main .info_blocks .icon_info_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .info_blocks .icon_info_block .icon_block svg {
+  width: 45px;
+  height: 45px;
+}
+main .info_blocks .icon_info_block .text_block {
+  padding-left: 0.5em;
+}
+main .info_blocks .icon_info_block .text_block .big_font {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  color: #081323;
+}
+main .info_blocks .icon_info_block .text_block .small_font {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.83rem;
+  line-height: calc(1rem - 1px);
+  color: #828282;
 }
 
 @media (min-width: 661px) {
@@ -418,6 +454,53 @@ main .info_blocks {
   header .search_input::placeholder {
     color: white;
   }
+  main {
+    font-size: 20px;
+  }
+  main .info_blocks {
+    font-size: 20px;
+    margin-top: 0.5rem;
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+  main .info_blocks .icon_info_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .info_blocks .icon_info_block .icon_block svg {
+    width: 50px;
+    height: 50px;
+  }
+  main .info_blocks .icon_info_block .text_block {
+    padding-left: 0.3em;
+  }
+  main .info_blocks .icon_info_block .text_block .big_font {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 1.2em;
+    color: #081323;
+  }
+  main .info_blocks .icon_info_block .text_block .small_font {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.6em;
+    line-height: calc(1em - 1px);
+    color: #828282;
+    margin-top: 0.3em;
+  }
 }
 @media (min-width: 931px) {
   header {
@@ -617,6 +700,50 @@ main .info_blocks {
     height: 10rem;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(60.65%, #ffffff));
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 60.65%);
+  }
+  main {
+    font-size: 24px;
+  }
+  main .info_blocks {
+    font-size: 24px;
+    margin-top: 0.5rem;
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+  main .info_blocks .icon_info_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .info_blocks .icon_info_block .icon_block svg {
+    width: 84px;
+    height: 84px;
+  }
+  main .info_blocks .icon_info_block .text_block {
+    padding-left: 0.3em;
+  }
+  main .info_blocks .icon_info_block .text_block .big_font {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    color: #081323;
+  }
+  main .info_blocks .icon_info_block .text_block .small_font {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.75em;
+    line-height: calc(1em - 1px);
+    color: #828282;
   }
 }
 @media (min-width: 1450px) {
